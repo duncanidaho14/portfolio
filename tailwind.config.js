@@ -11,6 +11,15 @@ module.exports = {
         }
       },
     },
+    plugins: [
+      require("tailwindcss"),
+      require('autoprefixer'),
+      require('flowbite/plugin'),
+      require('@headlessui/tailwindcss'),
+
+      // Or with a custom prefix:
+      require('@headlessui/tailwindcss')({ prefix: 'ui' })
+    ],
     content: [
       "./node_modules/flowbite/**/*.js",
       ".index.{html, js}",

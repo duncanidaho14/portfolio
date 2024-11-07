@@ -10,6 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@headlessui/tailwindcss": "^0.2.1",
     "autoprefixer": "^10.4.20",
     "cross-env": "^7.0.3",
     "flowbite": "^2.5.2",

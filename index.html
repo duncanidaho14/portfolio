@@ -12,7 +12,7 @@
 <body>
   
   <header>
-    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <nav id="navbar" class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
               <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo">
@@ -58,23 +58,23 @@
           class="w-full block max-h-96 code-wrap" />
   </div>
   
-    <section class="w-3/4 h-96 bottom-64 text-center">
+    <section class="w-full h-96 bottom-64">
       <div id="apropos" class="lg:flex lg:items-center lg:justify-between">
         <div class="min-w-0 flex-1">
           <h2 class="text-2xl/7 text-center font-bold text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">Développeur d'Application</h2>
-          <div class="mt-1 float-end flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6">
-            <div class="mt-2 flex items-center text-center  text-sm text-gray-500">
+          <div class="mt-1 float-start flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6">
+            <div class="mt-2 flex items-center text-left text-sm text-gray-500">
               <svg class="mr-1.5 h-5 w-5 shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                 <path fill-rule="evenodd" d="M6 3.75A2.75 2.75 0 0 1 8.75 1h2.5A2.75 2.75 0 0 1 14 3.75v.443c.572.055 1.14.122 1.706.2C17.053 4.582 18 5.75 18 7.07v3.469c0 1.126-.694 2.191-1.83 2.54-1.952.599-4.024.921-6.17.921s-4.219-.322-6.17-.921C2.694 12.73 2 11.665 2 10.539V7.07c0-1.321.947-2.489 2.294-2.676A41.047 41.047 0 0 1 6 4.193V3.75Zm6.5 0v.325a41.622 41.622 0 0 0-5 0V3.75c0-.69.56-1.25 1.25-1.25h2.5c.69 0 1.25.56 1.25 1.25ZM10 10a1 1 0 0 0-1 1v.01a1 1 0 0 0 1 1h.01a1 1 0 0 0 1-1V11a1 1 0 0 0-1-1H10Z" clip-rule="evenodd" />
                 <path d="M3 15.055v-.684c.126.053.255.1.39.142 2.092.642 4.313.987 6.61.987 2.297 0 4.518-.345 6.61-.987.135-.041.264-.089.39-.142v.684c0 1.347-.985 2.53-2.363 2.686a41.454 41.454 0 0 1-9.274 0C3.985 17.585 3 16.402 3 15.055Z" />
               </svg>
-              Temps plein
+              Temps plein / CDI
             </div>
             <div class="mt-2 flex items-center text-sm text-gray-500">
               <svg class="mr-1.5 h-5 w-5 shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                 <path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd" />
               </svg>
-              Télétravaille
+              Télétravail à Paris
             </div>
             <div class="mt-2 flex items-center text-sm text-gray-500">
               <svg class="mr-1.5 h-5 w-5 shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
@@ -93,38 +93,15 @@
         </div>
         
       
-          <!-- Dropdown -->
-          <div class="relative ml-3 sm:hidden">
-            <button type="button" 
-                    class="inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:ring-gray-400"
-                    id="triggerEl" aria-expanded="false" aria-haspopup="true">
-              More
-              <svg class="-mr-1 ml-1.5 h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-              </svg>
-            </button>
-      
-            <!--
-              Dropdown menu, show/hide based on menu state.
-     
-              Entering: "transition ease-out duration-200"
-                From: "transform opacity-0 scale-95"
-                To: "transform opacity-100 scale-100"
-              Leaving: "transition ease-in duration-75"
-                From: "transform opacity-100 scale-100"
-                To: "transform opacity-0 scale-95"
-             -->
-            <div id="targetEl" class="absolute transition ease-out duration-200 transform opacity-0 scale-95 right-0 z-10 -mr-1 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="mobile-menu-button" tabindex="-1">
-              <!-- Active: "bg-gray-100 outline-none", Not Active: "" -->
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="mobile-menu-item-0">Edit</a>
-              <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="mobile-menu-item-1">View</a>
-            </div>
-          </div>
+         
         </div>
       </div>
     </section>
 
-
+    <article class="flex">
+      <div class="grid grid-cols-4">Element 1</div>
+      <div class="grid grid-cols-6">Element 2</div>
+    </article>
 
 
 

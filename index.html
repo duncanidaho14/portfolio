@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Le portfolio d'Elhadi Beddarem, développeur web">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="./public/build/output.css" rel="stylesheet" />
     
     <title>Portfolio Elhadi Beddarem</title>
 </head>
-<body>
-  
+<body class="bg-linearRose">
+  <h1>Développeur d'Application à Paris</h1>
   <header>
-    <nav id="navbar" class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+    <nav id="navbar" class="bg-[#DB27CC] dark:bg-blue fixed w-full z-20 top-0 start-0 border-b border-[#DB5427] dark:border-blue-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-              <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo">
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img src="/assets/images/css-3.svg" class="h-8" alt="Flowbite Logo">
               <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Elhadi</span>
           </a>
           <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -28,7 +30,7 @@
               </svg>
             </button>
           </div>
-          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 opacity-100" id="navbar-sticky">
             <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <a href="#apropos" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">A propos</a>
@@ -40,7 +42,7 @@
                 <a href="#skills" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Skills</a>
               </li>
               <li>
-                <a href="#portfolio" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Portfolio</a>
+                <a href="#portfolio" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Projets</a>
               </li>
               <li>
                 <a href="#blog" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
@@ -51,66 +53,256 @@
             </ul>
           </div>
         </div>
-      </nav>
-    </header>
-  <div class="w-full">
-    <img src="https://img.freepik.com/photos-premium/mains-train-taper-clavier-reflexion-brillante_980716-617313.jpg?semt=ais_hybrid"
-          class="w-full block max-h-96 code-wrap" />
-  </div>
-  
-    <section class="w-full h-96 bottom-64">
-      <div id="apropos" class="lg:flex lg:items-center lg:justify-between">
+    </nav>
+  </header>
+
+  <div id="apropos" class="container mx-auto">
+    <div class="w-full">
+      <img src="/assets/images/projet.jpg" alt="wireframe"
+            class="w-full block max-h-96" data-aos="fade-up" />
+    </div>
+    
+    <section class="w-full h-auto bottom-64">
+      <div class="lg:flex lg:items-center lg:justify-between">
         <div class="min-w-0 flex-1">
-          <h2 class="text-2xl/7 text-center font-bold text-gray-900 sm:truncate sm:text-3xl sm:tracking-tight">Développeur d'Application</h2>
-          <div class="mt-1 float-start flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6">
-            <div class="mt-2 flex items-center text-left text-sm text-gray-500">
-              <svg class="mr-1.5 h-5 w-5 shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+          <h2 class="py-10 text-2xl text-center font-bold text-blue-400 leading-7 sm:truncate sm:text-3xl sm:tracking-tight">Elhadi Beddarem <br>
+              Directeur de projet en conception et développement de solution informatique
+          </h2>
+          <div class="mt-1 flex flex-col sm:mt-0 sm:flex-row sm:flex-wrap sm:space-x-6">
+            <div class="mt-2 flex items-center text-left text-xl text-pink-700">
+              <svg class="mr-1.5 h-5 w-5 shrink-0 text-pink-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                 <path fill-rule="evenodd" d="M6 3.75A2.75 2.75 0 0 1 8.75 1h2.5A2.75 2.75 0 0 1 14 3.75v.443c.572.055 1.14.122 1.706.2C17.053 4.582 18 5.75 18 7.07v3.469c0 1.126-.694 2.191-1.83 2.54-1.952.599-4.024.921-6.17.921s-4.219-.322-6.17-.921C2.694 12.73 2 11.665 2 10.539V7.07c0-1.321.947-2.489 2.294-2.676A41.047 41.047 0 0 1 6 4.193V3.75Zm6.5 0v.325a41.622 41.622 0 0 0-5 0V3.75c0-.69.56-1.25 1.25-1.25h2.5c.69 0 1.25.56 1.25 1.25ZM10 10a1 1 0 0 0-1 1v.01a1 1 0 0 0 1 1h.01a1 1 0 0 0 1-1V11a1 1 0 0 0-1-1H10Z" clip-rule="evenodd" />
                 <path d="M3 15.055v-.684c.126.053.255.1.39.142 2.092.642 4.313.987 6.61.987 2.297 0 4.518-.345 6.61-.987.135-.041.264-.089.39-.142v.684c0 1.347-.985 2.53-2.363 2.686a41.454 41.454 0 0 1-9.274 0C3.985 17.585 3 16.402 3 15.055Z" />
               </svg>
               Temps plein / CDI
             </div>
-            <div class="mt-2 flex items-center text-sm text-gray-500">
-              <svg class="mr-1.5 h-5 w-5 shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+            <div class="mt-2 flex items-center text-sm text-pink-500">
+              <svg class="mr-1.5 h-5 w-5 shrink-0 text-pink-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                 <path fill-rule="evenodd" d="m9.69 18.933.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C15.302 14.988 17 12.493 17 9A7 7 0 1 0 3 9c0 3.492 1.698 5.988 3.355 7.584a13.731 13.731 0 0 0 2.273 1.765 11.842 11.842 0 0 0 .976.544l.062.029.018.008.006.003ZM10 11.25a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z" clip-rule="evenodd" />
               </svg>
               Télétravail à Paris
             </div>
-            <div class="mt-2 flex items-center text-sm text-gray-500">
-              <svg class="mr-1.5 h-5 w-5 shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+            <div class="mt-2 flex items-center text-sm text-pink-500">
+              <svg class="mr-1.5 h-5 w-5 shrink-0 text-pink-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                 <path d="M10.75 10.818v2.614A3.13 3.13 0 0 0 11.888 13c.482-.315.612-.648.612-.875 0-.227-.13-.56-.612-.875a3.13 3.13 0 0 0-1.138-.432ZM8.33 8.62c.053.055.115.11.184.164.208.16.46.284.736.363V6.603a2.45 2.45 0 0 0-.35.13c-.14.065-.27.143-.386.233-.377.292-.514.627-.514.909 0 .184.058.39.202.592.037.051.08.102.128.152Z" />
                 <path fill-rule="evenodd" d="M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0Zm-8-6a.75.75 0 0 1 .75.75v.316a3.78 3.78 0 0 1 1.653.713c.426.33.744.74.925 1.2a.75.75 0 0 1-1.395.55 1.35 1.35 0 0 0-.447-.563 2.187 2.187 0 0 0-.736-.363V9.3c.698.093 1.383.32 1.959.696.787.514 1.29 1.27 1.29 2.13 0 .86-.504 1.616-1.29 2.13-.576.377-1.261.603-1.96.696v.299a.75.75 0 1 1-1.5 0v-.3c-.697-.092-1.382-.318-1.958-.695-.482-.315-.857-.717-1.078-1.188a.75.75 0 1 1 1.359-.636c.08.173.245.376.54.569.313.205.706.353 1.138.432v-2.748a3.782 3.782 0 0 1-1.653-.713C6.9 9.433 6.5 8.681 6.5 7.875c0-.805.4-1.558 1.097-2.096a3.78 3.78 0 0 1 1.653-.713V4.75A.75.75 0 0 1 10 4Z" clip-rule="evenodd" />
               </svg>
               € 45 K 
             </div>
-            <div class="mt-2 flex items-center text-sm text-gray-500">
-              <svg class="mr-1.5 h-5 w-5 shrink-0 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+            <div class="mt-2 flex items-center text-sm text-pink-500">
+              <svg class="mr-1.5 h-5 w-5 shrink-0 text-pink-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                 <path fill-rule="evenodd" d="M5.75 2a.75.75 0 0 1 .75.75V4h7V2.75a.75.75 0 0 1 1.5 0V4h.25A2.75 2.75 0 0 1 18 6.75v8.5A2.75 2.75 0 0 1 15.25 18H4.75A2.75 2.75 0 0 1 2 15.25v-8.5A2.75 2.75 0 0 1 4.75 4H5V2.75A.75.75 0 0 1 5.75 2Zm-1 5.5c-.69 0-1.25.56-1.25 1.25v6.5c0 .69.56 1.25 1.25 1.25h10.5c.69 0 1.25-.56 1.25-1.25v-6.5c0-.69-.56-1.25-1.25-1.25H4.75Z" clip-rule="evenodd" />
               </svg>
               Ouvert à de nouvelles opportunités
             </div>
           </div>
-        </div>
-        
-      
-         
-        </div>
+        </div>     
       </div>
-    </section>
+    </section>   
 
-    <article class="flex">
-      <div class="grid grid-cols-4">Element 1</div>
-      <div class="grid grid-cols-6">Element 2</div>
+    <div class="pb-12">
+      <hr>
+    </div>
+
+    <article class="p-4 text-justify">
+      <h3 class="text-3xl border border-spacing-4 bg-[#DB27CC] font-bold text-center">5 ans d'expériences en tant que développeur</h3>
+      <p class="mt-5 px-10 text-xl text-white  leading-2 dark:text-blue-400"><span class="pl-16">Fort</span> d’une formation solide <em class="font-bold">à l'école INSTA</em> de niveau <strong>Bac +5</strong> et d’une expérience approfondie en développement d’applications, je suis passionné par la création de 
+        solutions technologiques innovantes et performantes. Au fil des projets, j'ai su maîtriser les étapes de <strong>conception</strong>, de <strong>développement</strong> et de 
+        <strong>gestion de projets complexes</strong> , alliant compétences techniques pointues et sens stratégique. Mon parcours m’a permis de mener à bien des missions variées, de la définition
+        des besoins jusqu’au déploiement et suivi des solutions, en assurant une cohésion d’équipe et une satisfaction client exemplaires. En tant que Directeur
+        de projet, mon objectif est de transformer les ambitions numériques en solutions concrètes, adaptées aux besoins de l’entreprise et en phase avec 
+        les évolutions du marché.
+      </p>
     </article>
 
+    <div id="cv" class="p-12"><hr></div>
 
+    <article class="grid grid-cols-12">
+      <div class="col-span-4 py-6 pl-1">
+        <h3 class="text-3xl font-bold">Diplôme</h3>
+        <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500">
+          <ol class="relative border-s border-blue-500 dark:border-blue-700">                  
+            <li class="mb-10 ms-4">
+                <div class="absolute w-3 h-3 bg-blue-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-blue-900 dark:bg-blue-700"></div>
+                  <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue-500">Septembre 2022 à Août 2024</time>
+                  <h3 class="text-lg font-semibold text-blue-200 dark:text-white">INSTA Bac +5 Obtenue mention: "Bien"</h3>
+                  <p class="mb-4 text-base font-normal text-white dark:text-blue-400">Directeur de projet en conception et développement de solutions informatique</p>
+                  <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-blue-900 bg-white border border-blue-200 rounded-lg hover:bg-blue-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-blue-100 focus:text-blue-700 dark:bg-blue-800 dark:text-blue-400 dark:border-blue-600 dark:hover:text-white dark:hover:bg-blue-700 dark:focus:ring-blue-700">En apprendre plus <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+              </svg></a>
+            </li>
+            <li class="mb-10 ms-4">
+                <div class="absolute w-3 h-3 bg-blue-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-blue-900 dark:bg-blue-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue-500">Septembre 2021 Juillet 2022</time>
+                <h3 class="text-lg font-semibold text-blue-200 dark:text-white">2iTech</h3>
+                <p class="text-base font-normal text-white dark:text-blue-400">Concepteur Développeur d'Applications</p>
+            </li>
+            <li class="ms-4">
+                <div class="absolute w-3 h-3 bg-blue-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-blue-900 dark:bg-blue-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue-500">Mars 2020 à Juin 2020</time>
+                <h3 class="text-lg font-semibold text-blue-200 dark:text-white">3W Academy</h3>
+                <p class="text-base font-normal text-white dark:text-blue-400">Formation Symfony React JS</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="col-span-8 px-2">
+        <h3 class="text-3xl font-bold">Expériences <strong class="text-white">professionnelles</strong></h3>
+        <div data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500">
+          <ol class="relative border-s border-white dark:border-blue-700">                  
+            <li class="mb-10 ms-4">
+                <div class="absolute w-3 h-3  rounded-full mt-1.5 -start-1.5 border border-white dark:border-blue-900 dark:bg-blue-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-blue-200 dark:text-blue-500">Septembre 2022 à Août 2024</time>
+                <h3 class="text-lg font-semibold text-blue-200 dark:text-white">IAD</h3>
+                <p class="mb-4 text-base font-normal text-white dark:text-blue-400">Mes actions étaient de faire du PairProgramming, YODA Code, TDD, Clean Architecture, DDD, Code Review,
+                  PHPStan, CI/CD.</p>
+                <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-blue-900 bg-white border border-blue-200 rounded-lg hover:bg-blue-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-blue-100 focus:text-blue-700 dark:bg-white dark:text-blue-400 dark:border-blue-600 dark:hover:text-white dark:hover:bg-blue-700 dark:focus:ring-blue-700">Learn more <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg></a>
+            </li>
+            <li class="mb-10 ms-4">
+                <div class="absolute w-3 h-3 bg-blue-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-blue-900 dark:bg-blue-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue-500">Février 2021 à Juillet 2022</time>
+                <h3 class="text-lg font-semibold text-blue-200 dark:text-white">SAS Kalliste</h3>
+                <p class="text-base font-normal text-white dark:text-blue-400">Implémentation d'une Api RESTfull de "News" cablé à l'application BDES.</p>
+            </li>
+            <li class="ms-4">
+                <div class="absolute w-3 h-3 bg-blue-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-blue-900 dark:bg-blue-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue-500">Janvier 2020 à Septembre 2020</time>
+                <h3 class="text-lg font-semibold text-blue-200 dark:text-white">Altimatech</h3>
+                <p class="text-base font-normal text-white dark:text-blue-400">Conception et Développement d'une application de calcul du Nutri-Score avec une solution Symfony 4
+                  et Twig au sein d'une équipe de 3 développeurs.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </article>
+    
+    <div id="skills" class="p-12"></div>
 
-    <div class="bg-gray-50 py-24 sm:py-32">
+    <h3 class="pb-6 text-3xl font-bold text-center">Skills</h3>
+    <section class="w-full h-auto flex flex-wrap">
+      <div class="basis-1/3">
+        <h4 data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500" class="text-4xl m-2 text-center border border-blue-500 rounded-lg bg-blue-100">PHP</h4>
+        <a data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500" href="#" class="flex flex-col items-center bg-blue-100 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/assets/images/symfony.svg" alt="symfony">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Symfony</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">De nombreux projets en Symfony.</p>
+          </div>
+        </a>
+      </div>
+      <div class="basis-1/3">
+        <h4 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="text-4xl m-2 text-center border border-blue-500 rounded-lg bg-blue-100">Javascript</h4>
+        <a data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" href="https://shtex.fr" target="_blank" class="flex flex-col items-center bg-white border border-blue-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-blue-100 dark:border-blue-700 dark:bg-blue-800 dark:hover:bg-blue-700">
+          <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg lg:rounded" src="/assets/images/logo-javascript.svg" alt="javascript">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-blue-900 dark:text-white">React JS</h5>
+              <p class="mb-3 font-normal text-blue-700 dark:text-blue-400">shtex.fr</p>
+          </div>
+        </a>
+      </div>
+      <div class="basis-1/3">
+        <h4 data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500" class="text-4xl m-2 text-center border border-blue-500 rounded-lg bg-blue-100">Git</h4>
+        <a data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500" href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/assets/images/Git_icon.svg.png" alt="git">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">CI/CD</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Travail coopératif.</p>
+          </div>
+        </a>
+      </div>
+      <hr>
+      <div class="basis-1/3 w-full h-24">
+        <h4 data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500"  class="text-4xl m-2 text-center border border-blue-500 rounded-lg bg-blue-100">DevOps</h4>
+        <a data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1500"  href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <img class="object-cover w-full rounded-t-lg h-24 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/assets/images/docker-svgrepo-com.svg" alt="css3">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Docker & Kubernetes</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+          </div>
+        </a>
+      </div>
+      <div class="basis-1/3">
+        <h4 data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500"  class="text-4xl m-2 text-center border border-blue-500 rounded-lg bg-blue-100">Gestion de Projet</h4>
+        <a data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500"  href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <img class="object-cover w-full rounded-t-lg h-20 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/assets/images/uml-logo.png" alt="uml">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">UML & MERISE</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+          </div>
+        </a>
+      </div>
+      <div class="basis-1/3">
+        <h4 data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500"  class="text-4xl m-2 text-center border border-blue-500 rounded-lg bg-blue-100">CMS & SEO</h4>
+        <a data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1500"  href="#" class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+          <img class="object-cover w-full rounded-t-lg h-20 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" src="/assets/images/wordpress-logo.png" alt="wordpress">
+          <div class="flex flex-col justify-between p-4 leading-normal">
+              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Projet Bioovi</h5>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Modification du plugin WowCommerce afin de rajouter la quantité du panier à 0 produits par défaut.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="p-12"></div>
+
+<section>
+  <div><h2 class="pb-6 text-7xl text-center font-semibold text-white">Mes projets</h2></div>
+  <div class="container mx-auto w-full h-96">
+    <div class="grid lg:grid-cols-3 sm:grid-cols-1 sm:grid-rows-3">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./assets/images/iad-site.png" alt="projet iad" class="w-full h-96">
+          </div>
+          <div class="flip-card-back">
+            <h3>Iad Squad Discover</h3>
+            <p>Développeur Backend Symfony</p>
+            <p>Api platform, CI/CD, AWS S3, AWS EC2</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./assets/images/saskalliste.png" alt="projet sas kalliste" class="w-full h-96">
+          </div>
+          <div class="flip-card-back">
+            <h3>John Doe</h3>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./assets/images/ftl express.png" alt="projet FTL Express" class="w-full h-96">
+          </div>
+          <div class="flip-card-back">
+            <h3>John Doe</h3>
+            <p>Architect & Engineer</p>
+            <p>We love that guy</p>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+ 
+</section>
+
+  <div class="p-44"></div>
+
+  <section>
+    <div id="portfolio" class="py-24 sm:py-32">
         <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-          <h2 class="text-center text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
-          <p class="mx-auto mt-2 max-w-lg text-balance text-center text-4xl font-semibold tracking-tight text-gray-950 sm:text-5xl">Everything you need to deploy your app</p>
+          <h2 class="text-7xl text-center font-semibold text-white">Mes projets</h2>
+          <p class="mx-auto mt-2 max-w-lg text-balance text-center text-xl font-semibold tracking-tight text-pink-200 sm:text-5xl">Du Backend au Frontend</p>
           <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
-            <div class="relative lg:row-span-2">
+            <div data-aos="fade-right" class="relative lg:row-span-2">
               <div class="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem]"></div>
               <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
                 <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
@@ -119,13 +311,13 @@
                 </div>
                 <div class="relative min-h-[30rem] w-full grow [container-type:inline-size] max-lg:mx-auto max-lg:max-w-sm">
                   <div class="absolute inset-x-10 bottom-0 top-10 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
-                    <img class="size-full object-cover object-top" src="https://tailwindui.com/plus/img/component-images/bento-03-mobile-friendly.png" alt="">
+                    <img class="size-full object-cover object-top" src="/assets/images/symfony-chartjs.png" alt="admin dashboard">
                   </div>
                 </div>
               </div>
               <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 lg:rounded-l-[2rem]"></div>
             </div>
-            <div class="relative max-lg:row-start-1">
+            <div data-aos="fade-down" class="relative max-lg:row-start-1">
               <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-t-[2rem]"></div>
               <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
                 <div class="px-8 pt-8 sm:px-10 sm:pt-10">
@@ -133,12 +325,12 @@
                   <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit maiores impedit.</p>
                 </div>
                 <div class="flex flex-1 items-center justify-center px-8 max-lg:pb-12 max-lg:pt-10 sm:px-10 lg:pb-2">
-                  <img class="w-full max-lg:max-w-xs" src="https://tailwindui.com/plus/img/component-images/bento-03-performance.png" alt="">
+                  <img class="w-full max-lg:max-w-xs" src="/assets/images/panier geekbook screenshot.png" alt="panier projet geekbook">
                 </div>
               </div>
               <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5 max-lg:rounded-t-[2rem]"></div>
             </div>
-            <div class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
+            <div data-aos="fade-up" class="relative max-lg:row-start-3 lg:col-start-2 lg:row-start-2">
               <div class="absolute inset-px rounded-lg bg-white"></div>
               <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
                 <div class="px-8 pt-8 sm:px-10 sm:pt-10">
@@ -146,12 +338,12 @@
                   <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi.</p>
                 </div>
                 <div class="flex flex-1 items-center [container-type:inline-size] max-lg:py-6 lg:pb-2">
-                  <img class="h-[min(152px,40cqw)] object-cover object-center" src="https://tailwindui.com/plus/img/component-images/bento-03-security.png" alt="">
+                  <img class="h-[min(152px,40cqw)] object-cover object-center" src="/assets/images/panier geekbook screenshot.png" alt="panier projet geekbook.com">
                 </div>
               </div>
               <div class="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
             </div>
-            <div class="relative lg:row-span-2">
+            <div data-aos="fade-left" class="relative lg:row-span-2">
               <div class="absolute inset-px rounded-lg bg-white max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
               <div class="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
                 <div class="px-8 pb-3 pt-8 sm:px-10 sm:pb-0 sm:pt-10">
@@ -162,12 +354,18 @@
                   <div class="absolute bottom-0 left-10 right-0 top-10 overflow-hidden rounded-tl-xl bg-gray-900 shadow-2xl">
                     <div class="flex bg-gray-800/40 ring-1 ring-white/5">
                       <div class="-mb-px flex text-sm/6 font-medium text-gray-400">
-                        <div class="border-b border-r border-b-white/20 border-r-white/10 bg-white/5 px-4 py-2 text-white">NotificationSetting.jsx</div>
-                        <div class="border-r border-gray-600/10 px-4 py-2">App.jsx</div>
+                        <div class="border-b border-r border-b-white/20 border-r-white/10 bg-white/5 px-4 py-2 text-white cursor-pointer">NotificationSetting.jsx</div>
+                        <div class="border-r border-gray-600/10 px-4 py-2 cursor-pointer">App.jsx</div>
                       </div>
                     </div>
                     <div class="px-6 pb-14 pt-6">
-                      <!-- Your code example -->
+                      <div class="text-white">
+                        <p>Bonjour Madame, Monsieur,</p>
+                        <p>📧 elhadibeddarem@gmail.com</p>
+                        <p>localisation: Paris</p>
+                        <p>Sport: Football</p>
+                        <p>Lecture: SF, Manga</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -176,7 +374,143 @@
             </div>
           </div>
         </div>
-    </div> 
-    <script defer src="./assets/index.js"></script>
+      </div> 
+    </section>
+    <div>
+      <div class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+        <div>
+          <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Mes Compétences</h2>
+          <p class="mt-4 text-gray-500"></p>
+    
+          <dl class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
+            <div class="border-t border-gray-200 pt-4">
+              <dt class="font-medium text-white">Origin</dt>
+              <dd class="mt-2 text-sm text-white">Designed by Good Goods, Inc.</dd>
+            </div>
+            <div class="border-t border-gray-200 pt-4">
+              <dt class="font-medium text-white">Material</dt>
+              <dd class="mt-2 text-sm text-white">Solid walnut base with rare earth magnets and powder coated steel card cover</dd>
+            </div>
+            <div class="border-t border-gray-200 pt-4">
+              <dt class="font-medium text-white">Dimensions</dt>
+              <dd class="mt-2 text-sm text-white">6.25&quot; x 3.55&quot; x 1.15&quot;</dd>
+            </div>
+            <div class="border-t border-gray-200 pt-4">
+              <dt class="font-medium text-white">Finish</dt>
+              <dd class="mt-2 text-sm text-white">Hand sanded and finished with natural oil</dd>
+            </div>
+            <div class="border-t border-gray-200 pt-4">
+              <dt class="font-medium text-white">Includes</dt>
+              <dd class="mt-2 text-sm text-white">Wood card tray and 3 refill packs</dd>
+            </div>
+            <div class="border-t border-gray-200 pt-4">
+              <dt class="font-medium text-white">Considerations</dt>
+              <dd class="mt-2 text-sm text-white">Made from natural materials. Grain and color vary with each item.</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+          <img src="/assets/images/projet.jpg" alt="Walnut card tray filled with cards and card angled in dedicated groove." class="rounded-lg bg-gray-100">
+          <img src="/assets/images/logo-symfony.png" alt="Walnut card tray with white powder coated steel divider and 3 punchout holes." class="rounded-lg bg-gray-100">
+          <img src="/assets/images/docker-svgrepo-com.svg" alt="Top down view of walnut card tray with embedded magnets and card groove." class="rounded-lg bg-gray-100">
+          <img src="/assets/images/logo-javascript.svg" alt="Side of walnut card tray with card groove and recessed card area." class="rounded-lg bg-gray-100">
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+
+
+<footer class="text-white">
+  <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <div class="md:flex md:justify-between">
+        <div class="mb-6 md:mb-0">
+            <a href="https://flowbite.com/" class="flex items-center">
+                <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+            </a>
+        </div>
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Resources</h2>
+                <ul class="text-white dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                    </li>
+                    <li>
+                        <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Follow us</h2>
+                <ul class="text-white dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Legal</h2>
+                <ul class="text-white dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <div class="sm:flex sm:items-center sm:justify-between">
+        <span class="text-sm text-white sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+        </span>
+        <div class="flex mt-4 sm:justify-center sm:mt-0">
+            <a href="#" class="text-white hover:text-gray-900 dark:hover:text-white">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                      <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                  </svg>
+                <span class="sr-only">Facebook page</span>
+            </a>
+            <a href="#" class="text-white hover:text-gray-900 dark:hover:text-white ms-5">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+                      <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
+                  </svg>
+                <span class="sr-only">Discord community</span>
+            </a>
+            <a href="#" class="text-white hover:text-gray-900 dark:hover:text-white ms-5">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                  <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+              </svg>
+                <span class="sr-only">Twitter page</span>
+            </a>
+            <a href="#" class="text-white hover:text-gray-900 dark:hover:text-white ms-5">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                </svg>
+                <span class="sr-only">GitHub account</span>
+            </a>
+            <a href="#" class="text-white hover:text-gray-900 dark:hover:text-white ms-5">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
+              </svg>
+                <span class="sr-only">Dribbble account</span>
+            </a>
+        </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer src="./assets/index.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

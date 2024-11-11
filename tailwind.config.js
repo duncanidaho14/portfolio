@@ -8,6 +8,23 @@ module.exports = {
         },
         colors: {
           clifford: '#da373d',
+          whiteBackground: '#FFFFFF',
+          darkBackground: '#3748c6',
+          roseFoncer: '#CA3C66',
+          roseClaire: '#DB6A8F',
+          rosePale: '#E8AABE',
+          bleuPale: '#A7E0E0',
+          bleuClaire: '#4AA3A2',
+          orange: '#DB5427',
+          rouge: '#DB3627',
+          violet: '#DB27CC',
+          marron: '#DB7527',
+          rose: '#DB7527',
+          autreRose: '#ED779C'
+        },
+        backgroundImage: {
+          'dev-diplome': "url('./assets/images/diplome.svg')",
+          'diplome': "url('/assets/images/diplomedeux.svg')",
         }
       },
       screens: {
@@ -39,6 +56,7 @@ module.exports = {
     content: [
       "./node_modules/flowbite/**/*.js",
       ".index.{html, js}",
-      "./src/*.{html,js}"
+      "./src/*.{html,js}",
+      "./assets/*.{html,js}"
     ]
 }
